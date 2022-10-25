@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-10 inline" src="/img/logo-pokedex.png" />
+        </span>
+
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="#"
+            class="text-xl font-[Poppins] text-myBlack hover:text-hoverText duration-500"
+            >All pokemon</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            href="#"
+            class="text-xl font-[Poppins] text-myBlack hover:text-hoverText duration-500"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      class="flex items-center justify-center mt-16 container mx-auto"
+    >
+    <!-- grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
+      <!-- start card -->
+      <div class="rounded-xl shadow-lg">
+        <div class="p-5 flex flex-col">
+            <div class="rounded-xl overflow-hidden bg-grey p-4 w-56 h-56 flex">
+                <img class="m-auto" src="/img/Bulbasaur.svg" alt="bulbasaur">
+            </div>
+            <div class="flex justify-between items-center">
+                <h5 class="text-2xl md:text-3xl my-4 text-myBlack font-[Poppins]">Bulbasaur</h5>
+                <img src="/img/like.svg" alt="favorite">
+            </div>
+            <div class="flex">
+                <div class="bg-grass w-20 h-8 flex rounded-md mr-3">
+                    <p class="font-normal font-[Poppins] text-myBlack m-auto">Grass</p>
+                </div>
+                <div class="bg-poison w-20 h-8 flex rounded-md">
+                    <p class="font-normal font-[Poppins] text-myBlack m-auto">Poison</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- end card -->
+      <!-- start card -->
+      <div class="rounded-xl shadow-lg">
+        <div class="p-5 flex flex-col">
+            <div class="rounded-xl overflow-hidden bg-grey p-4 w-56 h-56 flex">
+                <img class="m-auto" src="/img/ivysaur.svg" alt="bulbasaur">
+            </div>
+            <div class="flex justify-between items-center">
+                <h5 class="text-2xl md:text-3xl my-4 text-myBlack font-[Poppins]">Ivysaur</h5>
+                <img src="/img/dislike.svg" alt="favorite">
+            </div>
+            <div class="flex">
+                <div class="bg-grass w-20 h-8 flex rounded-md mr-3">
+                    <p class="font-normal font-[Poppins] text-myBlack m-auto">Grass</p>
+                </div>
+                <div class="bg-poison w-20 h-8 flex rounded-md">
+                    <p class="font-normal font-[Poppins] text-myBlack m-auto">Poison</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- end card -->
+    </div>
+    <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.dev/svgjs"
+      viewBox="0 0 800 450"
+    >
+      <defs>
+        <filter
+          id="bbblurry-filter"
+          x="-100%"
+          y="-100%"
+          width="400%"
+          height="400%"
+          filterUnits="objectBoundingBox"
+          primitiveUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feGaussianBlur
+            stdDeviation="88"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            in="SourceGraphic"
+            edgeMode="none"
+            result="blur"
+          ></feGaussianBlur>
+        </filter>
+      </defs>
+      <g filter="url(#bbblurry-filter)">
+        <ellipse
+          rx="189.5"
+          ry="191"
+          cx="50.50897355513143"
+          cy="63.74849909002131"
+          fill="#FFCB0559"
+        ></ellipse>
+        <ellipse
+          rx="189.5"
+          ry="191"
+          cx="672.6174205433239"
+          cy="196.7400651411577"
+          fill="#3465AE4D"
+        ></ellipse>
+        <ellipse
+          rx="189.5"
+          ry="191"
+          cx="364.555702903054"
+          cy="496.86665482954544"
+          fill="#FFCB0559"
+        ></ellipse>
+      </g>
+    </svg> -->
+  </body>
+  <script src="/src/script.js"></script>
+</html>
